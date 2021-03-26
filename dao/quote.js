@@ -1,4 +1,4 @@
-const db = require('../pg/dbConfig');
+const db = require('../dbConfig');
 
 class QuoteDAO {
 
