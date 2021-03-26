@@ -21,7 +21,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- Name: knex_migrations; Type: TABLE; Schema: public; Owner: leviapp
+-- Name: knex_migrations; Type: TABLE; Schema: public; Owner: uvudnpymbyoadh
 --
 
 CREATE TABLE public.knex_migrations (
@@ -32,10 +32,10 @@ CREATE TABLE public.knex_migrations (
 );
 
 
-ALTER TABLE public.knex_migrations OWNER TO leviapp;
+ALTER TABLE public.knex_migrations OWNER TO uvudnpymbyoadh;
 
 --
--- Name: knex_migrations_id_seq; Type: SEQUENCE; Schema: public; Owner: leviapp
+-- Name: knex_migrations_id_seq; Type: SEQUENCE; Schema: public; Owner: uvudnpymbyoadh
 --
 
 CREATE SEQUENCE public.knex_migrations_id_seq
@@ -47,17 +47,17 @@ CREATE SEQUENCE public.knex_migrations_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.knex_migrations_id_seq OWNER TO leviapp;
+ALTER TABLE public.knex_migrations_id_seq OWNER TO uvudnpymbyoadh;
 
 --
--- Name: knex_migrations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: leviapp
+-- Name: knex_migrations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: uvudnpymbyoadh
 --
 
 ALTER SEQUENCE public.knex_migrations_id_seq OWNED BY public.knex_migrations.id;
 
 
 --
--- Name: knex_migrations_lock; Type: TABLE; Schema: public; Owner: leviapp
+-- Name: knex_migrations_lock; Type: TABLE; Schema: public; Owner: uvudnpymbyoadh
 --
 
 CREATE TABLE public.knex_migrations_lock (
@@ -66,10 +66,10 @@ CREATE TABLE public.knex_migrations_lock (
 );
 
 
-ALTER TABLE public.knex_migrations_lock OWNER TO leviapp;
+ALTER TABLE public.knex_migrations_lock OWNER TO uvudnpymbyoadh;
 
 --
--- Name: knex_migrations_lock_index_seq; Type: SEQUENCE; Schema: public; Owner: leviapp
+-- Name: knex_migrations_lock_index_seq; Type: SEQUENCE; Schema: public; Owner: uvudnpymbyoadh
 --
 
 CREATE SEQUENCE public.knex_migrations_lock_index_seq
@@ -81,17 +81,17 @@ CREATE SEQUENCE public.knex_migrations_lock_index_seq
     CACHE 1;
 
 
-ALTER TABLE public.knex_migrations_lock_index_seq OWNER TO leviapp;
+ALTER TABLE public.knex_migrations_lock_index_seq OWNER TO uvudnpymbyoadh;
 
 --
--- Name: knex_migrations_lock_index_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: leviapp
+-- Name: knex_migrations_lock_index_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: uvudnpymbyoadh
 --
 
 ALTER SEQUENCE public.knex_migrations_lock_index_seq OWNED BY public.knex_migrations_lock.index;
 
 
 --
--- Name: quotes; Type: TABLE; Schema: public; Owner: leviapp
+-- Name: quotes; Type: TABLE; Schema: public; Owner: uvudnpymbyoadh
 --
 
 CREATE TABLE public.quotes (
@@ -104,10 +104,10 @@ CREATE TABLE public.quotes (
 );
 
 
-ALTER TABLE public.quotes OWNER TO leviapp;
+ALTER TABLE public.quotes OWNER TO uvudnpymbyoadh;
 
 --
--- Name: quotes_id_seq; Type: SEQUENCE; Schema: public; Owner: leviapp
+-- Name: quotes_id_seq; Type: SEQUENCE; Schema: public; Owner: uvudnpymbyoadh
 --
 
 CREATE SEQUENCE public.quotes_id_seq
@@ -119,38 +119,38 @@ CREATE SEQUENCE public.quotes_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.quotes_id_seq OWNER TO leviapp;
+ALTER TABLE public.quotes_id_seq OWNER TO uvudnpymbyoadh;
 
 --
--- Name: quotes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: leviapp
+-- Name: quotes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: uvudnpymbyoadh
 --
 
 ALTER SEQUENCE public.quotes_id_seq OWNED BY public.quotes.id;
 
 
 --
--- Name: knex_migrations id; Type: DEFAULT; Schema: public; Owner: leviapp
+-- Name: knex_migrations id; Type: DEFAULT; Schema: public; Owner: uvudnpymbyoadh
 --
 
 ALTER TABLE ONLY public.knex_migrations ALTER COLUMN id SET DEFAULT nextval('public.knex_migrations_id_seq'::regclass);
 
 
 --
--- Name: knex_migrations_lock index; Type: DEFAULT; Schema: public; Owner: leviapp
+-- Name: knex_migrations_lock index; Type: DEFAULT; Schema: public; Owner: uvudnpymbyoadh
 --
 
 ALTER TABLE ONLY public.knex_migrations_lock ALTER COLUMN index SET DEFAULT nextval('public.knex_migrations_lock_index_seq'::regclass);
 
 
 --
--- Name: quotes id; Type: DEFAULT; Schema: public; Owner: leviapp
+-- Name: quotes id; Type: DEFAULT; Schema: public; Owner: uvudnpymbyoadh
 --
 
 ALTER TABLE ONLY public.quotes ALTER COLUMN id SET DEFAULT nextval('public.quotes_id_seq'::regclass);
 
 
 --
--- Data for Name: knex_migrations; Type: TABLE DATA; Schema: public; Owner: leviapp
+-- Data for Name: knex_migrations; Type: TABLE DATA; Schema: public; Owner: uvudnpymbyoadh
 --
 
 COPY public.knex_migrations (id, name, batch, migration_time) FROM stdin;
@@ -159,7 +159,7 @@ COPY public.knex_migrations (id, name, batch, migration_time) FROM stdin;
 
 
 --
--- Data for Name: knex_migrations_lock; Type: TABLE DATA; Schema: public; Owner: leviapp
+-- Data for Name: knex_migrations_lock; Type: TABLE DATA; Schema: public; Owner: uvudnpymbyoadh
 --
 
 COPY public.knex_migrations_lock (index, is_locked) FROM stdin;
@@ -168,7 +168,7 @@ COPY public.knex_migrations_lock (index, is_locked) FROM stdin;
 
 
 --
--- Data for Name: quotes; Type: TABLE DATA; Schema: public; Owner: leviapp
+-- Data for Name: quotes; Type: TABLE DATA; Schema: public; Owner: uvudnpymbyoadh
 --
 
 COPY public.quotes (id, title, text_body, img_url, created_at, updated_at) FROM stdin;
@@ -178,28 +178,28 @@ COPY public.quotes (id, title, text_body, img_url, created_at, updated_at) FROM 
 
 
 --
--- Name: knex_migrations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: leviapp
+-- Name: knex_migrations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: uvudnpymbyoadh
 --
 
 SELECT pg_catalog.setval('public.knex_migrations_id_seq', 1, true);
 
 
 --
--- Name: knex_migrations_lock_index_seq; Type: SEQUENCE SET; Schema: public; Owner: leviapp
+-- Name: knex_migrations_lock_index_seq; Type: SEQUENCE SET; Schema: public; Owner: uvudnpymbyoadh
 --
 
 SELECT pg_catalog.setval('public.knex_migrations_lock_index_seq', 1, true);
 
 
 --
--- Name: quotes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: leviapp
+-- Name: quotes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: uvudnpymbyoadh
 --
 
 SELECT pg_catalog.setval('public.quotes_id_seq', 10, true);
 
 
 --
--- Name: knex_migrations_lock knex_migrations_lock_pkey; Type: CONSTRAINT; Schema: public; Owner: leviapp
+-- Name: knex_migrations_lock knex_migrations_lock_pkey; Type: CONSTRAINT; Schema: public; Owner: uvudnpymbyoadh
 --
 
 ALTER TABLE ONLY public.knex_migrations_lock
@@ -207,7 +207,7 @@ ALTER TABLE ONLY public.knex_migrations_lock
 
 
 --
--- Name: knex_migrations knex_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: leviapp
+-- Name: knex_migrations knex_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: uvudnpymbyoadh
 --
 
 ALTER TABLE ONLY public.knex_migrations
@@ -215,7 +215,7 @@ ALTER TABLE ONLY public.knex_migrations
 
 
 --
--- Name: quotes quotes_pkey; Type: CONSTRAINT; Schema: public; Owner: leviapp
+-- Name: quotes quotes_pkey; Type: CONSTRAINT; Schema: public; Owner: uvudnpymbyoadh
 --
 
 ALTER TABLE ONLY public.quotes
