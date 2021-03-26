@@ -1,5 +1,7 @@
 // Update with your config settings.
-require('dotenv').config();
+require("dotenv").config();
+const pg = require("pg");
+pg.defaults.ssl = true;
 
 module.exports = {
 
@@ -27,7 +29,7 @@ module.exports = {
       max: 10
     },
     migrations: {
-      tableName: 'quotes',
+      tableName: 'knex_migrations',
       directory: './migrations'
     }
   }
