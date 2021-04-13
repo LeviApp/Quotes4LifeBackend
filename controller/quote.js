@@ -4,6 +4,7 @@ class QuoteController {
     async quoteList(req,res) {
         try {
             const quotes = await quoteService.quoteList()
+            console.log('running')
             res.status(200).json(quotes)
         }
 
