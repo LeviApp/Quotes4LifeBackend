@@ -8,8 +8,8 @@ const PORT = process.env.PORT || '3000'
 require('dotenv/config.js')
 server.use(morgan("tiny"))
 server.use(express.json());
-server.use('/quotes', quotesRoutes);
 server.use(cors());
+server.use('/quotes', quotesRoutes);
 
 server.get('/', (req, res) => {
     res.send("{ message: 'working so far' }");
