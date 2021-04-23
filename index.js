@@ -3,6 +3,7 @@ const quotesRoutes = require('./routes/quotes')
 const cors = require('cors')
 const server = express();
 const morgan = require('morgan')
+const PORT = process.env.PORT || '3000'
 require('dotenv/config.js')
 server.use(morgan("tiny"))
 server.use(express.json());
@@ -18,4 +19,4 @@ server.get('/quotes', (req,res) => {
     // res.status(200).json(rows)
 })
 
-server.listen('3000', () => console.log(`Server is running on port http://localhost:3000`))
+server.listen(PORT, () => console.log(`Server is running on port http://localhost:${PORT}`))
