@@ -4,6 +4,11 @@ const cors = require('cors')
 const server = express();
 const morgan = require('morgan')
 const PORT = process.env.PORT || '3000'
+
+const bodyParser = require('body-parser')
+server.use(bodyParser.urlencoded({extended: true}));
+server.use(express.urlencoded());
+
 require('dotenv/config.js')
 server.use(morgan("tiny"))
 server.use(express.json());
