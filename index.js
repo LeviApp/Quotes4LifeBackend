@@ -14,9 +14,4 @@ server.get('/', (req, res) => {
     res.send("{ message: 'working so far' }");
   });
 
-server.get('/quotes', (req,res) => {
-    // res.send("{ message: 'quotes are working' }");
-    res.status(200).json(rows)
-})
-
 server.listen(PORT, () => console.log(`Server is running on port http://localhost:${PORT}`))
