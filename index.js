@@ -10,8 +10,16 @@ server.use(express.json());
 server.use('/quotes', quotesRoutes);
 server.use(cors());
 
+if (process.env.NODE_ENV === 'production') {
+	server.use(express.static('client/build'));
+}
+
 server.get('/', (req, res) => {
     res.send("{ message: 'working so far' }");
   });
+
+server.get('*', (request, response) => {
+  response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
 
 server.listen(PORT, () => console.log(`Server is running on port http://localhost:${PORT}`))
