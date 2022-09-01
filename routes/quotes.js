@@ -8,4 +8,5 @@ router.get('/:id', quoteController.quoteSingle)
 router.delete('/:id', quoteController.deleteQuote)
 router.post('/new', quoteController.createQuote)
 router.put('/:id', quoteController.editQuote)
-module.exports = router;
+
+export default router;
