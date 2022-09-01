@@ -1,12 +1,11 @@
-const express = require("express");
-const quotesRoutes = require('./routes/quotes')
-const cors = require('cors')
-const morgan = require('morgan')
-
+import express from "express";
+import quotesRoutes from "./routes/quotes";
+import cors from "cors";
+import morgan from "morgan";
 const server = express();
 const PORT = process.env.PORT || '3000'
-
 require('dotenv/config.js')
+
 server.use(morgan("tiny"))
 server.use(express.json());
 server.use(cors());

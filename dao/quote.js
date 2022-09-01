@@ -1,4 +1,4 @@
-const db = require('../dbConfig');
+import db from "../dbConfig";
 
 class QuoteDAO {
 

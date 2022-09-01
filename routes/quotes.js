@@ -1,7 +1,7 @@
-const express = require("express");
+import express from "express"
 // import * as pool from "dbConfig"
 const router = express.Router();
-const quoteController = require('../controller/quote')
+import quoteController from "../controller/quote";
 
 router.get('/', quoteController.quoteList)
 router.get('/:id', quoteController.quoteSingle)

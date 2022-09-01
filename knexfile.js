@@ -1,6 +1,6 @@
 // Update with your config settings.
 require("dotenv").config();
-const pg = require("pg");
+import pg from "pg";
 
 module.exports = {
 

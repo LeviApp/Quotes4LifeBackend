@@ -1,4 +1,4 @@
-const quoteDAO = require("../dao/quote")
+import quoteDAO from "../dao/quote";
 
 
 class QuoteService {
