@@ -4,7 +4,8 @@ import cors from "cors";
 import morgan from "morgan";
 const server = express();
 const PORT = process.env.PORT || '3000'
-require('dotenv/config.js')
+import * as dotenv from 'dotenv' // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
+dotenv.config()
 
 server.use(morgan("tiny"))
 server.use(express.json());

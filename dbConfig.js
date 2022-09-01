@@ -1,5 +1,7 @@
 const dbEngine = process.env.DB_ENVIRONMENT || "development";
-const knexConfig = require("./knexfile.js")[dbEngine];
-const db = require("knex")(knexConfig);
+import knex from "knex";
+import knexConfig from "./knexfile.js";
+knexConfig[dbEngine]
+const db = knex(knexConfig);
 
 export default db;

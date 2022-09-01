@@ -1,8 +1,9 @@
 // Update with your config settings.
-require("dotenv").config();
+import * as dotenv from 'dotenv' // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
+dotenv.config()
 import pg from "pg";
 
-module.exports = {
+const knexConfig = {
 
   development: {
     client: 'pg',
@@ -39,3 +40,5 @@ module.exports = {
     }
   }
 };
+
+export default knexConfig;
