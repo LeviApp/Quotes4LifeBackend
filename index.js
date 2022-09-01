@@ -1,5 +1,5 @@
 import express from "express";
-import router from "./routes/quotes";
+import router from "./routes/quotes.js";
 import cors from "cors";
 import morgan from "morgan";
 const server = express();
