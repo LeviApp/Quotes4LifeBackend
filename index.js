@@ -1,5 +1,5 @@
 import express from "express";
-import router from "./routes/quotes";
+const quotesRoutes = require('./routes/quotes')
 import cors from "cors";
 import morgan from "morgan";
 const server = express();
@@ -9,7 +9,7 @@ require('dotenv/config.js')
 server.use(morgan("tiny"))
 server.use(express.json());
 server.use(cors());
-server.use('/quotes', router);
+server.use('/quotes', quotesRoutes);
 
 server.get('/', (req, res) => {
     res.send("{ message: 'working so far' }");
