@@ -88,4 +88,4 @@ class QuoteController {
     }
 }
 
-module.exports = new QuoteController()
+export default new QuoteController()

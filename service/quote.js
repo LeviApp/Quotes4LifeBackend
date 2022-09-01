@@ -21,4 +21,4 @@ class QuoteService {
     }
 }
 
-module.exports = new QuoteService()
+export default new QuoteService()

@@ -65,4 +65,4 @@ class QuoteDAO {
         }
 }
 
-module.exports = new QuoteDAO()
+export default new QuoteDAO()
