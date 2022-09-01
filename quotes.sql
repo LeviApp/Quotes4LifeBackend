@@ -226,3 +226,4 @@ ALTER TABLE ONLY public.quotes
 -- PostgreSQL database dump complete
 --
 
+postgres://werarmwkofecyk:d5f6b983ae7ecccd6c749d30434f83304639525cd0adb6a9d52528229b5d0d89@ec2-54-205-183-19.compute-1.amazonaws.com:5432/df2o9alvrgqidj

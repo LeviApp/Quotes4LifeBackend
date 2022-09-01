@@ -1,8 +1,9 @@
 const express = require("express");
 const quotesRoutes = require('./routes/quotes')
 const cors = require('cors')
-const server = express();
 const morgan = require('morgan')
+
+const server = express();
 const PORT = process.env.PORT || '3000'
 
 require('dotenv/config.js')

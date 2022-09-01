@@ -20,6 +20,7 @@ class QuoteDAO {
             console.log("Something went wrong.", err)
         }
     }
+    
     async createQuote(title,text_body,img_url) {
 
     try {
