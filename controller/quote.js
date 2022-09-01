@@ -1,5 +1,4 @@
 import quoteService from '../service/quote.js'
-import fetch from 'node-fetch';
 class QuoteController {
     async quoteList(req,res) {
         try {
