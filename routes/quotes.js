@@ -1,7 +1,7 @@
 import express from "express"
 // import * as pool from "dbConfig"
 const router = express.Router();
-import quoteController from "../controller/quote";
+import quoteController from "../controller/quote.js";
 
 router.get('/', quoteController.quoteList)
 router.get('/:id', quoteController.quoteSingle)

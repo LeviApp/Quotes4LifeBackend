@@ -1,4 +1,4 @@
-import quoteDAO from "../dao/quote";
+import quoteDAO from "../dao/quote.js";
 
 
 class QuoteService {
